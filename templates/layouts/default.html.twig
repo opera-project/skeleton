@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ cms_area('header', page) }}
+    {{ cms_area('header') }}
+
+    <hr />
+    {{ cms_area('body', page) }}
+
+{% endblock %}

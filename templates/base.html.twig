@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{{ cms_render(page.title) }}{% endblock %}</title>
+        <meta name="description" content="{{ page.metaDescription }}" />
+        <meta name="keywords" content="{{ page.metaKeyword }}" />
+
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
