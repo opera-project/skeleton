@@ -9,6 +9,7 @@ use App\Repository\BlockRepository;
 use App\Entity\Page;
 use Symfony\Component\HttpKernel\Controller\ControllerReference;
 use App\Cms\BlockManager;
+use App\Cms\Context;
 
 class CmsExtension extends AbstractExtension
 {
@@ -16,13 +17,13 @@ class CmsExtension extends AbstractExtension
 
     private $blockManager;
 
-    private $twig;
+    private $cmsContext;
 
-    public function __construct(\Twig_Environment $twig, BlockRepository $blockRepository, BlockManager $blockManager)
+    public function __construct(BlockRepository $blockRepository, BlockManager $blockManager, Context $cmsContext)
     {
-        $this->twig = $twig;
         $this->blockRepository = $blockRepository;
         $this->blockManager = $blockManager;
+        $this->cmsContext = $cmsContext;
     }
 
     public function getFunctions(): array
@@ -60,6 +61,13 @@ class CmsExtension extends AbstractExtension
      */
     public function render(string $twigTemplate) : string
     {   
-        return $twigTemplate;
+        $tplName = uniqid('cms_render_', true);
+
+        $twig = new \Twig_Environment(new \Twig_Loader_Array());        
+        $template = $twig->createTemplate($twigTemplate);
+        
+        return $template->render(
+            $this->cmsContext->toArray()
+        );
     }
 }

@@ -35,3 +35,6 @@ services:
 
     App\Routing\CmsRoutesLoader:
         tags: ['routing.loader']
+
+    App\Cms\Context:
+        public: true

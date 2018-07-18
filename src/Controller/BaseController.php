@@ -10,11 +10,14 @@ abstract class BaseController extends Controller
     {
         $page = $this->getRequest()->get('page');
 
+        $variables = array_merge($variables, [
+            'page' => $page,
+        ]);
+        $this->get(\App\Cms\Context::class)->setVariables($variables);
+
         return $this->render(
             sprintf('layouts/%s.html.twig', $page->getLayout()),
-            array_merge($variables, [
-                'page' => $page,
-            ])
+            $variables
         );
     }
 
