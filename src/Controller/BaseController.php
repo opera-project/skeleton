@@ -6,7 +6,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 abstract class BaseController extends Controller
 {   
-    protected function renderPage(array $variables)
+    protected function renderPage(array $variables = array())
     {
         $page = $this->getRequest()->get('page');
 
