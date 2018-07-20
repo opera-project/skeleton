@@ -3,6 +3,8 @@
 namespace App\BlockType;
 
 use Symfony\Component\HttpFoundation\RequestStack;
+use Opera\CoreBundle\BlockType\BlockTypeInterface;
+use Opera\CoreBundle\BlockType\BaseBlock;
 
 class Article extends BaseBlock implements BlockTypeInterface
 {
