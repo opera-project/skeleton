@@ -17,4 +17,7 @@ return [
     EasyCorp\Bundle\EasyAdminBundle\EasyAdminBundle::class => ['all' => true],
     Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle::class => ['all' => true],
     Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle::class => ['dev' => true, 'test' => true],
+    Opera\CoreBundle\OperaCoreBundle::class => ['all' => true],
+    Opera\TextBlockBundle\OperaTextBlockBundle::class => ['all' => true],
+    Opera\AdminBundle\OperaAdminBundle::class => ['all' => true],
 ];

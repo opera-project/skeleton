@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Entity\Article;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Entity;
+use Opera\CoreBundle\Controller\BaseController;
 
 class ArticleController extends BaseController
 {   

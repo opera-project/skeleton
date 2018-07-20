@@ -1,5 +1,30 @@
 easy_admin:
-   entities:
-#        # List the entity class name you want to manage
-        - App\Entity\Page
-        - App\Entity\Layout
+    design:
+        menu:
+            - { label: 'Layout', children: ['Page', 'Layout'] }
+            - { label: 'Content', children: ['Article'] }
+
+    entities:
+        Article:
+            class: App\Entity\Article
+        Page:
+            class: Opera\CoreBundle\Entity\Page
+            list:
+                fields: [ 'slug', 'title', 'status', 'route' ]
+                actions: 
+                    - edit
+                    - delete
+                    - { name: 'opera_admin_pages_blocks', type: 'route', label: 'Layout' } 
+            form:
+                fields:
+                    - { type: 'tab' , label: 'Informations', icon: 'user' }
+                    - title
+                    - slug
+                    - status
+                    - route
+                    - layout
+                    - { type: 'tab' , label: 'SEO', icon: 'search' }
+                    - { property: meta_keyword, type: textarea }
+                    - { property: meta_description, type: textarea }
+        Layout:
+            class: Opera\CoreBundle\Entity\Layout

@@ -2,7 +2,7 @@
 
 namespace App\DataFixtures;
 
-use App\Entity\Block;
+use Opera\CoreBundle\Entity\Block;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\Persistence\ObjectManager;
 use Doctrine\Common\DataFixtures\DependentFixtureInterface;

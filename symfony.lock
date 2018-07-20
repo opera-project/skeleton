@@ -119,6 +119,15 @@
     "ocramius/proxy-manager": {
         "version": "2.1.1"
     },
+    "opera-project/admin-bundle": {
+        "version": "dev-master"
+    },
+    "opera-project/core-bundle": {
+        "version": "dev-master"
+    },
+    "opera-project/text-block-bundle": {
+        "version": "dev-master"
+    },
     "pagerfanta/pagerfanta": {
         "version": "v1.1.0"
     },
