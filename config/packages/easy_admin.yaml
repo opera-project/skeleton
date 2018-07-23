@@ -1,7 +1,7 @@
 easy_admin:
     design:
         menu:
-            - { label: 'Layout', children: ['Page', 'Layout'] }
+            - { label: 'Layout', children: ['Page'] }
             - { label: 'Content', children: ['Article'] }
 
     entities:
@@ -26,5 +26,3 @@ easy_admin:
                     - { type: 'tab' , label: 'SEO', icon: 'search' }
                     - { property: meta_keyword, type: textarea }
                     - { property: meta_description, type: textarea }
-        Layout:
-            class: Opera\CoreBundle\Entity\Layout
