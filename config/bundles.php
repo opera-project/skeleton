@@ -20,4 +20,5 @@ return [
     Opera\CoreBundle\OperaCoreBundle::class => ['all' => true],
     Opera\TextBlockBundle\OperaTextBlockBundle::class => ['all' => true],
     Opera\AdminBundle\OperaAdminBundle::class => ['all' => true],
+    FOS\CKEditorBundle\FOSCKEditorBundle::class => ['all' => true],
 ];
