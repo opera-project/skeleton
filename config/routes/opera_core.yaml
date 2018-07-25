@@ -1,3 +1,3 @@
 opera_core_bundle:
     resource: .
-    type: cms
+    type: opera
