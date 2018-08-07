@@ -2,7 +2,7 @@ easy_admin:
     design:
         menu:
             - { label: 'Layout', children: ['Page'] }
-            - { label: 'Content', children: ['Article'] }
+            - { label: 'Content', children: ['Article', { label: 'Medias', route: 'opera_admin_media_list' }] }
 
     entities:
         Article:

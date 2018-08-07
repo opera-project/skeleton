@@ -1,0 +1,4 @@
+opera_media:
+    sources:
+        images:
+            filesystem: gaufrette.images_filesystem

@@ -1,0 +1,3 @@
+opera_media_admin:
+    resource: '@OperaMediaBundle/Resources/config/routing/admin.yaml'
+    prefix: /admin
