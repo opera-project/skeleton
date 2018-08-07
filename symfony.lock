@@ -128,6 +128,9 @@
     "opera-project/core-bundle": {
         "version": "dev-master"
     },
+    "opera-project/list-block-bundle": {
+        "version": "0.1-dev"
+    },
     "opera-project/text-block-bundle": {
         "version": "dev-master"
     },

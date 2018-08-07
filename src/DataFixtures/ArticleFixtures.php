@@ -17,6 +17,18 @@ class ArticleFixtures extends Fixture
         $article->setBody('Lorem ipsum');
         $manager->persist($article);
 
+        $article = new Article();
+        $article->setSlug('deuxieme-article');
+        $article->setTitle('Exemple de deuxieme article');
+        $article->setBody('Lorem ipsum dolor sit amet');
+        $manager->persist($article);
+
+        $article = new Article();
+        $article->setSlug('article-3');
+        $article->setTitle('Exemple de 3 article');
+        $article->setBody('Lorem ipsum dolor sit amet');
+        $manager->persist($article);
+
         $manager->flush();
     }
 }

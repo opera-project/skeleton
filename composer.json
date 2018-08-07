@@ -8,6 +8,7 @@
         "friendsofsymfony/ckeditor-bundle": "^1.1",
         "opera-project/admin-bundle": "dev-master",
         "opera-project/core-bundle": "dev-master",
+        "opera-project/list-block-bundle": "^0.1.0@dev",
         "opera-project/text-block-bundle": "dev-master",
         "ramsey/uuid-doctrine": "^1.4",
         "sensio/framework-extra-bundle": "^5.1",
