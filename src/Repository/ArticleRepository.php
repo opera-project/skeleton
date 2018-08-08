@@ -16,7 +16,7 @@ use Opera\CoreBundle\Entity\Block;
  */
 class ArticleRepository extends ServiceEntityRepository implements BlockListableInterface
 {
-    public const ORDER_RECENT_FIRST = 'recents first';
+    public const ORDER_RECENT_FIRST = 'recent first';
     public const ORDER_ALPHABETICAL = 'alphabetical';
 
     public function __construct(RegistryInterface $registry)
@@ -47,7 +47,7 @@ class ArticleRepository extends ServiceEntityRepository implements BlockListable
         if (isset($blockConfig['order'])) {
             switch ($blockConfig['order']) {
                 case self::ORDER_RECENT_FIRST:
-                    $qb->orderBy('a.slug', 'DESC');
+                    $qb->orderBy('a.createdAt', 'DESC');
                     break;
                 case self::ORDER_ALPHABETICAL:
                     $qb->orderBy('a.title', 'ASC');
