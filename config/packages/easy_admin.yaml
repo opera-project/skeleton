@@ -1,3 +1,7 @@
+imports:
+    - { resource: "@OperaMediaBundle/Resources/config/easy_admin.yaml" }
+    - { resource: "@OperaAdminBundle/Resources/config/easy_admin.yaml" }
+
 easy_admin:
     design:
         menu:
@@ -7,23 +11,3 @@ easy_admin:
     entities:
         Article:
             class: App\Entity\Article
-
-        Page:
-            class: Opera\CoreBundle\Entity\Page
-            list:
-                fields: [ 'slug', 'title', 'status', 'route' ]
-                actions: 
-                    - edit
-                    - delete
-                    - { name: 'opera_admin_pages_blocks', type: 'route', label: 'Layout' } 
-            form:
-                fields:
-                    - { type: 'tab' , label: 'Informations', icon: 'user' }
-                    - title
-                    - slug
-                    - { property: 'status', type: 'choice', type_options: { choices: { 'published': 'published', 'draft': 'draft' } } }
-                    - route
-                    - layout
-                    - { type: 'tab' , label: 'SEO', icon: 'search' }
-                    - { property: meta_keyword, type: textarea }
-                    - { property: meta_description, type: textarea }
