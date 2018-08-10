@@ -24,4 +24,5 @@ return [
     Opera\ListBlockBundle\OperaListBlockBundle::class => ['all' => true],
     Knp\Bundle\GaufretteBundle\KnpGaufretteBundle::class => ['all' => true],
     Opera\MediaBundle\OperaMediaBundle::class => ['all' => true],
+    Liip\ImagineBundle\LiipImagineBundle::class => ['all' => true],
 ];

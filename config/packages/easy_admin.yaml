@@ -1,5 +1,4 @@
 imports:
-    - { resource: "@OperaMediaBundle/Resources/config/easy_admin.yaml" }
     - { resource: "@OperaAdminBundle/Resources/config/easy_admin.yaml" }
 
 easy_admin:
