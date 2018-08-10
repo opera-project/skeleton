@@ -5,6 +5,7 @@ namespace App\BlockType;
 use Symfony\Component\HttpFoundation\RequestStack;
 use Opera\CoreBundle\BlockType\BlockTypeInterface;
 use Opera\CoreBundle\BlockType\BaseBlock;
+use Opera\CoreBundle\Entity\Block;
 
 class Article extends BaseBlock implements BlockTypeInterface
 {
@@ -20,7 +21,7 @@ class Article extends BaseBlock implements BlockTypeInterface
         return 'article';
     }
 
-    public function getVariables() : array
+    public function getVariables(Block $block) : array
     {
         return [
             'article' => $this->requestStack->getCurrentRequest()->get('article'),

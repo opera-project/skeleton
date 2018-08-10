@@ -18,6 +18,8 @@ services:
     _instanceof:
         Opera\CoreBundle\BlockType\BlockTypeInterface:
             tags: ['cms.block_type']
+        Opera\ListBlockBundle\BlockType\BlockListableInterface:
+            tags: ['cms.block_listable']
             
     # makes classes in src/ available to be used as services
     # this creates a service per class whose id is the fully-qualified class name

@@ -1,0 +1,6 @@
+{% for article in contents %}
+    <div class="article">
+        <strong>{{ article.title }}</strong>
+        <p>{{ article.body | raw }}</p>
+    </div>
+{% endfor %}

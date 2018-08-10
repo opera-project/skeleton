@@ -21,4 +21,8 @@ return [
     Opera\TextBlockBundle\OperaTextBlockBundle::class => ['all' => true],
     Opera\AdminBundle\OperaAdminBundle::class => ['all' => true],
     FOS\CKEditorBundle\FOSCKEditorBundle::class => ['all' => true],
+    Opera\ListBlockBundle\OperaListBlockBundle::class => ['all' => true],
+    Knp\Bundle\GaufretteBundle\KnpGaufretteBundle::class => ['all' => true],
+    Opera\MediaBundle\OperaMediaBundle::class => ['all' => true],
+    Liip\ImagineBundle\LiipImagineBundle::class => ['all' => true],
 ];

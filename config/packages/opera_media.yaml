@@ -1,0 +1,17 @@
+opera_media:
+    sources:
+        images:
+            filesystem: gaufrette.images_filesystem
+            wrapper: gaufrette://images/
+
+        toto:
+            filesystem: gaufrette.images_filesystem
+            wrapper: gaufrette://images/
+
+liip_imagine:
+    data_loader: opera_media.chain_loader
+    filter_sets:
+        opera_thumbnail:
+            quality: 75
+            filters:
+                thumbnail: { size: [120, 120], mode: outbound }
