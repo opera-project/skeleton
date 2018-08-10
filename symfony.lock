@@ -149,7 +149,7 @@
     "opera-project/list-block-bundle": {
         "version": "0.1-dev"
     },
-    "opera-project/opera-media-bundle": {
+    "opera-project/media-bundle": {
         "version": "0.1-dev"
     },
     "opera-project/text-block-bundle": {

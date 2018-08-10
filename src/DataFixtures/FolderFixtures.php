@@ -10,10 +10,6 @@ class FolderFixtures extends Fixture
 {
     const FOLDER_INSTRUMENTS = 'FOLDER_INSTRUMENTS';
 
-    public function __construct()
-    {
-    }
-
     public function load(ObjectManager $manager)
     {
         $parentFolder1 = new Folder();

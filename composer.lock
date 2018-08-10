@@ -2268,7 +2268,7 @@
             "time": "2018-08-06T17:09:49+00:00"
         },
         {
-            "name": "opera-project/opera-media-bundle",
+            "name": "opera-project/media-bundle",
             "version": "dev-master",
             "source": {
                 "type": "git",
@@ -7331,7 +7331,7 @@
         "opera-project/admin-bundle": 20,
         "opera-project/core-bundle": 20,
         "opera-project/list-block-bundle": 20,
-        "opera-project/opera-media-bundle": 20,
+        "opera-project/media-bundle": 20,
         "opera-project/text-block-bundle": 20,
         "symfony/lts": 20
     },
