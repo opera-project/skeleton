@@ -15,3 +15,7 @@ liip_imagine:
             quality: 75
             filters:
                 thumbnail: { size: [120, 120], mode: outbound }
+        toto:
+            quality: 75
+            filters:
+                thumbnail: { size: [300, 300], mode: outbound }

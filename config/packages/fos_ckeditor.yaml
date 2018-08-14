@@ -1,0 +1,9 @@
+fos_ck_editor:
+    default_config: opera
+    plugins:
+        opera_media_picker:
+            path:     "/bundles/operamedia/opera_media_picker/" # with trailing slash
+            filename: "plugin.js"
+    configs:
+        opera:
+            extraPlugins: "opera_media_picker"

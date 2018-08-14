@@ -10,3 +10,8 @@ easy_admin:
     entities:
         Article:
             class: App\Entity\Article
+            form:
+                fields:
+                    - title
+                    - slug
+                    - { property: body, type: FOS\CKEditorBundle\Form\Type\CKEditorType }
