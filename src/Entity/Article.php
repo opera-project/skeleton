@@ -5,6 +5,7 @@ namespace App\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
 use Gedmo\Timestampable\Traits\TimestampableEntity;
+use Opera\TaxonomyBundle\Taggable\Traits\TaggableEntity;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\ArticleRepository")
@@ -12,6 +13,7 @@ use Gedmo\Timestampable\Traits\TimestampableEntity;
 class Article
 {
     use TimestampableEntity;
+    use TaggableEntity;
 
     /**
      * @var \Ramsey\Uuid\UuidInterface

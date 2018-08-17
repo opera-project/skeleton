@@ -152,6 +152,9 @@
     "opera-project/media-bundle": {
         "version": "0.1-dev"
     },
+    "opera-project/taxonomy-bundle": {
+        "version": "0.1-dev"
+    },
     "opera-project/text-block-bundle": {
         "version": "dev-master"
     },

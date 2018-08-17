@@ -1,11 +1,13 @@
 imports:
     - { resource: "@OperaAdminBundle/Resources/config/easy_admin.yaml" }
+    - { resource: "@OperaTaxonomyBundle/Resources/config/easy_admin.yaml" }
 
 easy_admin:
     design:
         menu:
             - { label: 'Layout', children: ['Page'] }
             - { label: 'Content', children: ['Article', { label: 'Medias', route: 'opera_admin_media_list' }] }
+            - { label: 'Taxonomy', children: ['Tag'] }
 
     entities:
         Article:
@@ -15,3 +17,4 @@ easy_admin:
                     - title
                     - slug
                     - { property: body, type: FOS\CKEditorBundle\Form\Type\CKEditorType }
+                    - tags

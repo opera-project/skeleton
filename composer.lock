@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "de67b15c155fa6b81a6f3d336dc3e89a",
+    "content-hash": "5f4203d63ea3bf67218cd80d70d5f51b",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -2318,6 +2318,53 @@
             ],
             "description": "Easy manage media with opera cms",
             "time": "2018-08-10T16:59:16+00:00"
+        },
+        {
+            "name": "opera-project/taxonomy-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/opera-project/OperaTaxonomyBundle.git",
+                "reference": "b1a4f68d86b2d20d5d3ed8b45216601b64b12c20"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/opera-project/OperaTaxonomyBundle/zipball/b1a4f68d86b2d20d5d3ed8b45216601b64b12c20",
+                "reference": "b1a4f68d86b2d20d5d3ed8b45216601b64b12c20",
+                "shasum": ""
+            },
+            "require": {
+                "opera-project/core-bundle": "^0.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.2"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Opera\\TaxonomyBundle\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cedric Lombardot",
+                    "email": "cedric.lombardot@gmail.com"
+                }
+            ],
+            "description": "The `OperaTaxonomyBundle` provide a way to tag entities  for opera-project cms",
+            "time": "2018-08-17T11:15:05+00:00"
         },
         {
             "name": "opera-project/text-block-bundle",
@@ -7335,6 +7382,7 @@
         "opera-project/core-bundle": 20,
         "opera-project/list-block-bundle": 20,
         "opera-project/media-bundle": 20,
+        "opera-project/taxonomy-bundle": 20,
         "opera-project/text-block-bundle": 20,
         "symfony/lts": 20
     },
