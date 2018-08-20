@@ -58,6 +58,12 @@ class ArticleRepository extends ServiceEntityRepository implements BlockListable
             }
         }
 
+        if (isset($blockConfig['tags'])) {
+            $qb->innerJoin('a.tags', 't')
+               ->andWhere('t.id IN (:tags)')
+               ->setParameter('tags', $blockConfig['tags']);
+        }
+
         if (isset($blockConfig['limit'])) {
             $qb->setMaxResults($blockConfig['limit']);
         }
@@ -65,32 +71,4 @@ class ArticleRepository extends ServiceEntityRepository implements BlockListable
         return $qb->getQuery()->getResult();
     }
 
-//    /**
-//     * @return Article[] Returns an array of Article objects
-//     */
-    /*
-    public function findByExampleField($value)
-    {
-        return $this->createQueryBuilder('a')
-            ->andWhere('a.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('a.id', 'ASC')
-            ->setMaxResults(10)
-            ->getQuery()
-            ->getResult()
-        ;
-    }
-    */
-
-    /*
-    public function findOneBySomeField($value): ?Article
-    {
-        return $this->createQueryBuilder('a')
-            ->andWhere('a.exampleField = :val')
-            ->setParameter('val', $value)
-            ->getQuery()
-            ->getOneOrNullResult()
-        ;
-    }
-    */
 }
