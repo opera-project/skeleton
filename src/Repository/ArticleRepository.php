@@ -58,7 +58,7 @@ class ArticleRepository extends ServiceEntityRepository implements BlockListable
             }
         }
 
-        if (isset($blockConfig['tags'])) {
+        if (isset($blockConfig['tags']) && $blockConfig['tags']) {
             $qb->innerJoin('a.tags', 't')
                ->andWhere('t.id IN (:tags)')
                ->setParameter('tags', $blockConfig['tags']);
