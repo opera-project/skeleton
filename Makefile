@@ -5,3 +5,4 @@ init:
 	./bin/console doctrine:fixtures:load
 	./bin/console assets:install
 	./bin/console ckeditor:install
+	./bin/console assets:install public
