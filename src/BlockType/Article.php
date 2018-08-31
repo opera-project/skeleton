@@ -21,7 +21,7 @@ class Article extends BaseBlock implements BlockTypeInterface
         return 'article';
     }
 
-    public function getVariables(Block $block) : array
+    public function execute(Block $block) : array
     {
         return [
             'article' => $this->requestStack->getCurrentRequest()->get('article'),
