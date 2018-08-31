@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "5e803961cd748b2d80e1db47c73483a0",
@@ -2177,12 +2177,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/opera-project/OperaCoreBundle.git",
-                "reference": "4d0283eae56b99c5a59c4416082f2ecc17b878b5"
+                "reference": "598d2b7c208bf713e000a375a20c82968fd58540"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opera-project/OperaCoreBundle/zipball/4d0283eae56b99c5a59c4416082f2ecc17b878b5",
-                "reference": "4d0283eae56b99c5a59c4416082f2ecc17b878b5",
+                "url": "https://api.github.com/repos/opera-project/OperaCoreBundle/zipball/598d2b7c208bf713e000a375a20c82968fd58540",
+                "reference": "598d2b7c208bf713e000a375a20c82968fd58540",
                 "shasum": ""
             },
             "require": {
@@ -2221,7 +2221,7 @@
                 }
             ],
             "description": "The main opera project bundle manage the base of the cms",
-            "time": "2018-08-31T16:28:32+00:00"
+            "time": "2018-08-31T20:32:57+00:00"
         },
         {
             "name": "opera-project/list-block-bundle",
@@ -2229,12 +2229,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/opera-project/OperaListBlockBundle.git",
-                "reference": "4d641a44e46b0cc32b747212c557eae81ca933dc"
+                "reference": "43ec51d7b70fec872ae819ecb77cc2fe443d4dde"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opera-project/OperaListBlockBundle/zipball/4d641a44e46b0cc32b747212c557eae81ca933dc",
-                "reference": "4d641a44e46b0cc32b747212c557eae81ca933dc",
+                "url": "https://api.github.com/repos/opera-project/OperaListBlockBundle/zipball/43ec51d7b70fec872ae819ecb77cc2fe443d4dde",
+                "reference": "43ec51d7b70fec872ae819ecb77cc2fe443d4dde",
                 "shasum": ""
             },
             "require": {
@@ -2269,7 +2269,7 @@
                 }
             ],
             "description": "Make opera able to manage list blocks",
-            "time": "2018-08-31T16:43:43+00:00"
+            "time": "2018-08-31T20:33:18+00:00"
         },
         {
             "name": "opera-project/media-bundle",
