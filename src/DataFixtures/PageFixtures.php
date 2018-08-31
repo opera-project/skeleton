@@ -43,7 +43,7 @@ class PageFixtures extends Fixture implements DependentFixtureInterface
                 ],
                 'methods' => [ 'GET' ],
                 'requirements' => [
-                    'slug' => '\w+',
+                    'slug' => '.+',
                 ],
             ],
         ]);

@@ -7,6 +7,7 @@ use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Symfony\Bridge\Doctrine\RegistryInterface;
 use Opera\ListBlockBundle\BlockType\BlockListableInterface;
 use Opera\CoreBundle\Entity\Block;
+use Doctrine\ORM\QueryBuilder;
 
 /**
  * @method Article|null find($id, $lockMode = null, $lockVersion = null)
@@ -38,7 +39,7 @@ class ArticleRepository extends ServiceEntityRepository implements BlockListable
         ];
     }
 
-    public function filterForListableBlock(Block $block) : array
+    public function filterForListableBlock(Block $block) : QueryBuilder
     {
         $blockConfig = $block->getConfiguration();
         
@@ -64,11 +65,7 @@ class ArticleRepository extends ServiceEntityRepository implements BlockListable
                ->setParameter('tags', $blockConfig['tags']);
         }
 
-        if (isset($blockConfig['limit'])) {
-            $qb->setMaxResults($blockConfig['limit']);
-        }
-
-        return $qb->getQuery()->getResult();
+        return $qb;
     }
 
 }

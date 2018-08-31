@@ -1,0 +1,6 @@
+_opera_page:
+  path: /{_opera_page_path}/
+  defaults:
+      _opera_page_path: /
+  requirements:
+      _opera_page_path: .+

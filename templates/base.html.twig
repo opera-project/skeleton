@@ -2,9 +2,9 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}{{ cms_render(page.title) }}{% endblock %}</title>
-        <meta name="description" content="{{ page.metaDescription }}" />
-        <meta name="keywords" content="{{ page.metaKeyword }}" />
+        <title>{% block title %}{{ cms_render(_opera_page.title) }}{% endblock %}</title>
+        <meta name="description" content="{{ _opera_page.metaDescription }}" />
+        <meta name="keywords" content="{{ _opera_page.metaKeyword }}" />
 
         {% block stylesheets %}{% endblock %}
     </head>
