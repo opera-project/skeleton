@@ -16,8 +16,6 @@ services:
                             # The best practice is to be explicit about your dependencies anyway.
 
     _instanceof:
-        Opera\CoreBundle\BlockType\BlockTypeInterface:
-            tags: ['cms.block_type']
         Opera\ListBlockBundle\BlockType\BlockListableInterface:
             tags: ['cms.block_listable']
             
