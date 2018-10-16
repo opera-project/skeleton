@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ cms_area('header') }}
+    {{ cms_area('header', _opera_page) }}
+    <div class="container">
+        <div class="col-lg-8">
+            {{ cms_area('body', _opera_page) }}
+        </div>
+        <div class="col-md-4">
+            {{ cms_area('sidebar', _opera_page) }}
+        </div>
+    </div>
+{% endblock %}

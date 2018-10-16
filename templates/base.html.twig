@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}{{ cms_render(_opera_page.title) }}{% endblock %}</title>
-        <meta name="description" content="{{ _opera_page.metaDescription }}" />
-        <meta name="keywords" content="{{ _opera_page.metaKeyword }}" />
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-        {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
+    <title>{% block title %}{{ cms_render(_opera_page.title) }}{% endblock %}</title>
+    <meta name="description" content="{{ _opera_page.metaDescription }}" />
+    <meta name="keywords" content="{{ _opera_page.metaKeyword }}" />
+
+    <link media="all" rel="stylesheet" href="{{ asset('build/css/business-frontpage.css') }}">
+    <link media="all" rel="stylesheet" href="{{ asset('build/css/bootstrap.min.css') }}">
+
+    {% block stylesheets %}{% endblock %}
+  </head>
+
+  <body>
+    {% block body %}{% endblock %}
+    {% block javascripts %}{% endblock %}
+  </body>
 </html>

@@ -1,10 +1,9 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    {{ cms_area('header', _opera_page) }}
     {{ cms_area('header') }}
-
-    <hr />
-    {{ cms_area('body', _opera_page) }}
-
+    {{ cms_area('header', _opera_page) }}
+    <div class="container">
+        {{ cms_area('body', _opera_page) }}
+    </div>
 {% endblock %}

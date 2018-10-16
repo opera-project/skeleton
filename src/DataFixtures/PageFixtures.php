@@ -12,6 +12,7 @@ class PageFixtures extends Fixture implements DependentFixtureInterface
     const PAGE_BASE = 'PAGE_BASE';
     const PAGE_GLOBAL = 'PAGE_GLOBAL';
     const PAGE_ARTICLE = 'PAGE_ARTICLE';
+    const PAGE_HOME = 'PAGE_HOME';
 
     public function load(ObjectManager $manager)
     {
@@ -49,6 +50,21 @@ class PageFixtures extends Fixture implements DependentFixtureInterface
         ]);
         $page->setLayout($this->getReference(LayoutFixtures::LAYOUT_DEFAULT));
         $this->addReference(self::PAGE_ARTICLE, $page);
+        $manager->persist($page);
+
+        $page = new Page();
+        $page->setTitle('Hello home sweet home');
+        $page->setSlug('');
+        $page->setStatus('published');
+        $page->setLayout($this->getReference(LayoutFixtures::LAYOUT_DEFAULT));
+        $this->addReference(self::PAGE_HOME, $page);
+        $manager->persist($page);
+
+        $page = new Page();
+        $page->setTitle('My two column page here');
+        $page->setSlug('exemple-page');
+        $page->setStatus('published');
+        $page->setLayout($this->getReference(LayoutFixtures::LAYOUT_TWO_COL));
         $manager->persist($page);
 
         $manager->flush();
