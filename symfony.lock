@@ -158,6 +158,9 @@
     "opera-project/text-block-bundle": {
         "version": "dev-master"
     },
+    "opera-project/twig-block-bundle": {
+        "version": "0.1-dev"
+    },
     "pagerfanta/pagerfanta": {
         "version": "v1.1.0"
     },

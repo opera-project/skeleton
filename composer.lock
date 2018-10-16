@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5e803961cd748b2d80e1db47c73483a0",
+    "content-hash": "d0d2fc5b562e9333d056d0096a2fd5c1",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -2129,12 +2129,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/opera-project/OperaAdminBundle.git",
-                "reference": "ca0675555440cd1681136eb3331f4d48d9f64b73"
+                "reference": "87bc14eaba00ded05903689fd2c7de9ec2acbb1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opera-project/OperaAdminBundle/zipball/ca0675555440cd1681136eb3331f4d48d9f64b73",
-                "reference": "ca0675555440cd1681136eb3331f4d48d9f64b73",
+                "url": "https://api.github.com/repos/opera-project/OperaAdminBundle/zipball/87bc14eaba00ded05903689fd2c7de9ec2acbb1b",
+                "reference": "87bc14eaba00ded05903689fd2c7de9ec2acbb1b",
                 "shasum": ""
             },
             "require": {
@@ -2169,7 +2169,7 @@
                 }
             ],
             "description": "The admin part for opera",
-            "time": "2018-08-17T12:02:14+00:00"
+            "time": "2018-10-16T10:40:53+00:00"
         },
         {
             "name": "opera-project/core-bundle",
@@ -2177,12 +2177,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/opera-project/OperaCoreBundle.git",
-                "reference": "598d2b7c208bf713e000a375a20c82968fd58540"
+                "reference": "efa61b0c875d4a1936b747d881c6229b3b3ec350"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opera-project/OperaCoreBundle/zipball/598d2b7c208bf713e000a375a20c82968fd58540",
-                "reference": "598d2b7c208bf713e000a375a20c82968fd58540",
+                "url": "https://api.github.com/repos/opera-project/OperaCoreBundle/zipball/efa61b0c875d4a1936b747d881c6229b3b3ec350",
+                "reference": "efa61b0c875d4a1936b747d881c6229b3b3ec350",
                 "shasum": ""
             },
             "require": {
@@ -2221,7 +2221,7 @@
                 }
             ],
             "description": "The main opera project bundle manage the base of the cms",
-            "time": "2018-08-31T20:32:57+00:00"
+            "time": "2018-10-12T12:24:58+00:00"
         },
         {
             "name": "opera-project/list-block-bundle",
@@ -2229,12 +2229,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/opera-project/OperaListBlockBundle.git",
-                "reference": "43ec51d7b70fec872ae819ecb77cc2fe443d4dde"
+                "reference": "d76f2bc5dfe5af46c60a9940cc1cda49b0d2e59b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opera-project/OperaListBlockBundle/zipball/43ec51d7b70fec872ae819ecb77cc2fe443d4dde",
-                "reference": "43ec51d7b70fec872ae819ecb77cc2fe443d4dde",
+                "url": "https://api.github.com/repos/opera-project/OperaListBlockBundle/zipball/d76f2bc5dfe5af46c60a9940cc1cda49b0d2e59b",
+                "reference": "d76f2bc5dfe5af46c60a9940cc1cda49b0d2e59b",
                 "shasum": ""
             },
             "require": {
@@ -2269,7 +2269,7 @@
                 }
             ],
             "description": "Make opera able to manage list blocks",
-            "time": "2018-08-31T20:33:18+00:00"
+            "time": "2018-10-05T11:05:21+00:00"
         },
         {
             "name": "opera-project/media-bundle",
@@ -2277,12 +2277,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/opera-project/OperaMediaBundle.git",
-                "reference": "b3e7b09a681c21435a0d80ef1bfb87013553fae0"
+                "reference": "2bf71661d2e5b922e23d3ed54abb874e6d8c21b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opera-project/OperaMediaBundle/zipball/b3e7b09a681c21435a0d80ef1bfb87013553fae0",
-                "reference": "b3e7b09a681c21435a0d80ef1bfb87013553fae0",
+                "url": "https://api.github.com/repos/opera-project/OperaMediaBundle/zipball/2bf71661d2e5b922e23d3ed54abb874e6d8c21b4",
+                "reference": "2bf71661d2e5b922e23d3ed54abb874e6d8c21b4",
                 "shasum": ""
             },
             "require": {
@@ -2318,7 +2318,7 @@
                 }
             ],
             "description": "Easy manage media with opera cms",
-            "time": "2018-08-17T14:18:23+00:00"
+            "time": "2018-10-15T15:13:24+00:00"
         },
         {
             "name": "opera-project/taxonomy-bundle",
@@ -2373,12 +2373,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/opera-project/OperaTextBlockBundle.git",
-                "reference": "ab01fa75f70681cc731ee0bbd59914cfacca3b45"
+                "reference": "f276a4833f53bc8b5c0d30ccd41aa5ecf1d265b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opera-project/OperaTextBlockBundle/zipball/ab01fa75f70681cc731ee0bbd59914cfacca3b45",
-                "reference": "ab01fa75f70681cc731ee0bbd59914cfacca3b45",
+                "url": "https://api.github.com/repos/opera-project/OperaTextBlockBundle/zipball/f276a4833f53bc8b5c0d30ccd41aa5ecf1d265b5",
+                "reference": "f276a4833f53bc8b5c0d30ccd41aa5ecf1d265b5",
                 "shasum": ""
             },
             "require": {
@@ -2415,7 +2415,54 @@
                 }
             ],
             "description": "The `OperaTextBlockBundle` provide a simple text / html for opera-project cms",
-            "time": "2018-08-17T12:32:14+00:00"
+            "time": "2018-09-17T20:18:55+00:00"
+        },
+        {
+            "name": "opera-project/twig-block-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/opera-project/OperaTwigBlockBundle.git",
+                "reference": "0f5fb0626b42f0aed9d10e72c14152019eeaacbb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/opera-project/OperaTwigBlockBundle/zipball/0f5fb0626b42f0aed9d10e72c14152019eeaacbb",
+                "reference": "0f5fb0626b42f0aed9d10e72c14152019eeaacbb",
+                "shasum": ""
+            },
+            "require": {
+                "opera-project/core-bundle": "^0.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.2"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Opera\\TwigBlockBundle\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cedric Lombardot",
+                    "email": "cedric.lombardot@gmail.com"
+                }
+            ],
+            "description": "The `OperaTwigBlockBundle` provide a way to put template in blocks",
+            "time": "2018-10-16T10:40:32+00:00"
         },
         {
             "name": "pagerfanta/pagerfanta",
@@ -4540,6 +4587,7 @@
             ],
             "description": "Enforces Long Term Supported versions of Symfony components",
             "homepage": "https://symfony.com",
+            "abandoned": "symfony/flex",
             "time": "2018-04-03T05:04:16+00:00"
         },
         {
@@ -7387,6 +7435,7 @@
         "opera-project/media-bundle": 20,
         "opera-project/taxonomy-bundle": 20,
         "opera-project/text-block-bundle": 20,
+        "opera-project/twig-block-bundle": 20,
         "symfony/lts": 20
     },
     "prefer-stable": false,
