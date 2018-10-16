@@ -26,4 +26,5 @@ return [
     Opera\MediaBundle\OperaMediaBundle::class => ['all' => true],
     Liip\ImagineBundle\LiipImagineBundle::class => ['all' => true],
     Opera\TaxonomyBundle\OperaTaxonomyBundle::class => ['all' => true],
+    Opera\TwigBlockBundle\OperaTwigBlockBundle::class => ['all' => true],
 ];
