@@ -18,12 +18,14 @@ class LayoutFixtures extends Fixture
         $layout->setConfiguration([
             'areas' => [
                 'H' => 'header',
-                'B' => 'body'
+                'B' => 'body',
+                'F' => 'footer',
             ],
             'layout' => [
                 'H H H H',
                 'B B B B',
                 'B B B B',
+                'F F F F',
             ]
         ]);
 

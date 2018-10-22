@@ -48,6 +48,21 @@ class BlockFixtures extends Fixture implements DependentFixtureInterface
         $manager->persist($block);
 
         $block = new Block();
+        $block->setName('Copyright');
+        $block->setPage($this->getReference(PageFixtures::PAGE_GLOBAL));
+        $block->setType('twig');
+        $block->setArea('footer');
+        $block->setConfiguration([
+            'code' => '
+          <footer class="py-5 bg-dark">
+            <div class="container">
+              <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+            </div>
+          </footer>',
+        ]);
+        $manager->persist($block);
+
+        $block = new Block();
         $block->setName('Header 1');
         $block->setPage($this->getReference(PageFixtures::PAGE_HOME));
         $block->setType('twig');
