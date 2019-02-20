@@ -13,6 +13,7 @@
         "opera-project/media-bundle": "^0.1.0@dev",
         "opera-project/taxonomy-bundle": "^0.1.0@dev",
         "opera-project/text-block-bundle": "dev-master",
+        "opera-project/twig-block-bundle": "^0.1.0@dev",
         "ramsey/uuid-doctrine": "^1.4",
         "sensio/framework-extra-bundle": "^5.1",
         "stof/doctrine-extensions-bundle": "^1.3",
@@ -83,7 +84,7 @@
     },
     "extra": {
         "symfony": {
-            "allow-contrib": false
+            "allow-contrib": true
         },
         "branch-alias": {
             "dev-master": "1.0-dev"

@@ -26,4 +26,8 @@ return [
     Opera\MediaBundle\OperaMediaBundle::class => ['all' => true],
     Liip\ImagineBundle\LiipImagineBundle::class => ['all' => true],
     Opera\TaxonomyBundle\OperaTaxonomyBundle::class => ['all' => true],
+    WhiteOctober\PagerfantaBundle\WhiteOctoberPagerfantaBundle::class => ['all' => true],
+    JMS\SerializerBundle\JMSSerializerBundle::class => ['all' => true],
+    Nelmio\ApiDocBundle\NelmioApiDocBundle::class => ['all' => true],
+    Opera\TwigBlockBundle\OperaTwigBlockBundle::class => ['all' => true],
 ];
