@@ -4,6 +4,11 @@ imports:
 
 easy_admin:
     design:
+        assets:
+            css:
+                - 'bundles/easyadmin/bootstrap-all.css'
+            js:
+                - 'bundles/easyadmin/bootstrap-all.js'
         menu:
             - { label: 'Layout', children: ['Page'] }
             - { label: 'Content', children: ['Article', { label: 'Medias', route: 'opera_admin_media_list' }] }
