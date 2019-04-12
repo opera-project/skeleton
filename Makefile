@@ -1,4 +1,5 @@
 init:
+	composer install
 	echo "{}" > public/build/manifest.json
 	./bin/console doctrine:database:create
 	./bin/console doctrine:schema:create
